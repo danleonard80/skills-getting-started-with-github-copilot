@@ -88,8 +88,8 @@ section h3 {
 
 .participants-list {
   margin: 0;
-  padding-left: 20px;
-  list-style-type: disc;
+  padding: 0;
+  list-style-type: none;
 }
 
 .participant-item {
@@ -97,6 +97,22 @@ section h3 {
   color: #444;
   padding: 6px 0;
   border-bottom: 1px solid rgba(0,0,0,0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-participant {
+  color: #c62828;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: rgba(198, 40, 40, 0.1);
 }
 
 .participant-item:last-child {
